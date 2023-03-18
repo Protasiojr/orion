@@ -5,3 +5,15 @@ body {
 h1 {
     color: blue;
 }
+
+.header{
+    background-color: red;
+}
+
+.main{
+    background-color: blue;
+}
+
+.footer{
+    background-color: green;
+}
