@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Protasiojr/orion#readme",
   "devDependencies": {
+    "ts-node": "^10.9.1",
     "typescript": "^5.0.3"
   }
 }
