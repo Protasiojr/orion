@@ -3,7 +3,9 @@
         "target": "ES2019",
         "module": "CommonJs",
         "lib": ["ESNext","DOM"],
-        "outDir": "./dist",
+        //saida do compilador "TypeScript"
+        "outDir": "./dist/js",
+        //pasta principal do programa
         "rootDir": "./src",
         "removeComments": true,
         "noEmitOnError": true,
@@ -11,9 +13,8 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true
     },
-    "include": [
-        "./src"
-    ]
+    "include": ["./src/**/*"]
     
 }
