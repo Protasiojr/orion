@@ -1,5 +1,4 @@
-export class DBLogin {
-
+export class DBLogin{
     private inputLogin;
     private inputSenha;
 
@@ -7,9 +6,9 @@ export class DBLogin {
         this.inputLogin = document.querySelector('#login');
         this.inputSenha = document.querySelector('#senha');
     }
-    adiciona(){
+
+    adiciona (){
         console.log(this.inputLogin);
         console.log(this.inputSenha);
     }
-
 }
