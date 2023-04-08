@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <script src="js/views/teste.js" ></script>
+    //<script src="js/controllers/login.js" type= "module"></script>
     <title>Document</title>
 </head>
 <body>
 
     <form class="form">
-        <label for="login">Login</label>
-        <input type="text" id="login" required autofocus/>
-
-        <label for="login">Login</label>
-        <input type="text" id="senha" required/>
-
+        <div class="form-group"></div>
+            <label for="login">Login</label>
+            <input type="text" id="login" required autofocus/>
+        </div>    
+        <div class="form-group">  
+            <label for="login">Senha</label>
+            <input type="password" id="senha" required autofocus/>
+        </div>
         <button class="btn btn-primary" type="submit">LOGIN</button>
     </form>
     <br>
     <br>
-    <script src="js/controllers/login.js" type ="module"></script>
     
 </body>
 </html>
