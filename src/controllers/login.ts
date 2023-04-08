@@ -1,12 +1,7 @@
+//import {DBLogin} from '../banco/dbLogin.js';
 
-export class Login {
-
-    private imputLogin;
-    private imputSenha;
-
-    constructor(){
-        this.imputLogin = document.querySelector('#login');
-        this.imputSenha = document.querySelector('senha');
-    }
-
-}
+//const dbLogin = new DBLogin();
+const form = document.querySelector('.form');
+form?.addEventListener('submit', event => {
+   // dbLogin.adiciona();
+})
