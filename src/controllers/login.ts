@@ -1,7 +1,8 @@
-import { DBLogin } from "../db/dbLogin";
+import { DBLogin } from "../db/dbLogin.js";
 
-const dbLogin = new DBLogin();
+const login = new DBLogin();
 const form = document.querySelector('.form');
 form?.addEventListener('submit', event => {
-    dbLogin.adiciona();
+    event.preventDefault();
+    login.adiciona();
 })
