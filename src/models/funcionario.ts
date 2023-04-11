@@ -3,16 +3,18 @@ import { Pessoa } from "./pessoa";
 export class Funcionario extends Pessoa{
 
     private _matricula:number = 0;
+    private _ctps:number;
+    private _ctpsEmissor:String;
+    private _naturalidade:String;
+    private _estadoCivil:String;
 
-    constructor(_cpf:number, 
-                _nome: String, 
-                _dtNascimento:Date, 
-                _email:String,
-            private _ctps:number,
-            private _ctpsEmissor:String,
-            private _naturalidade:String,
-            private _estadoCivil:String){
-    super(_cpf,_nome,_dtNascimento,_email);
+    constructor(_cpf:number,_nome: String,_dtNascimento:Date,_email:String,
+             ctps:number,ctpsEmissor:String,naturalidade:String,estadoCivil:String){
+                super(_cpf,_nome,_dtNascimento,_email);
+                this._ctps = ctps;
+                this._ctpsEmissor = ctpsEmissor;
+                this._naturalidade = naturalidade;
+                this._estadoCivil = estadoCivil;              
     }
 
     set matricula(matricula:number){

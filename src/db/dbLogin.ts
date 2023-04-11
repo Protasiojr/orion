@@ -1,6 +1,6 @@
 export class DBLogin{
-    private inputLogin;
-    private inputSenha;
+    private inputLogin: string;
+    private inputSenha: string;
 
     constructor(){
         this.inputLogin = document.querySelector('#login');
