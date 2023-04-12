@@ -1,12 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Telefone = void 0;
-class Telefone {
-    constructor(_ddd, _numero, _tipo) {
-        this._ddd = _ddd;
-        this._numero = _numero;
-        this._tipo = _tipo;
+export class Telefone {
+    constructor(ddd, numero, tipo) {
         this._idTelefone = 0;
+        this._ddd = ddd;
+        this._numero = numero;
+        this._tipo = tipo;
     }
     set idTelefone(idTelefone) {
         this._idTelefone = idTelefone;
@@ -33,4 +30,3 @@ class Telefone {
         return this._tipo;
     }
 }
-exports.Telefone = Telefone;

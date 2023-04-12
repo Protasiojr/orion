@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
-        "target": "ES2019",
-        "module": "CommonJs",
+        "target": "ES6",
+        //"module": "CommonJs",
         "lib": ["ESNext","DOM"],
         //saida do compilador "TypeScript"
         "outDir": "./dist/js",

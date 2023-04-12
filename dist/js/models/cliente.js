@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Cliente = void 0;
-const pessoa_1 = require("./pessoa");
-class Cliente extends pessoa_1.Pessoa {
+import { Pessoa } from "./pessoa";
+export class Cliente extends Pessoa {
     constructor(cpf, nome, dtNascimento, email) {
         super(cpf, nome, dtNascimento, email);
         this._idCliente = 0;
@@ -14,4 +11,3 @@ class Cliente extends pessoa_1.Pessoa {
         return this._idCliente;
     }
 }
-exports.Cliente = Cliente;

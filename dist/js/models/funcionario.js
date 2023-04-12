@@ -1,15 +1,12 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Funcionario = void 0;
-const pessoa_1 = require("./pessoa");
-class Funcionario extends pessoa_1.Pessoa {
-    constructor(_cpf, _nome, _dtNascimento, _email, _ctps, _ctpsEmissor, _naturalidade, _estadoCivil) {
+import { Pessoa } from "./pessoa";
+export class Funcionario extends Pessoa {
+    constructor(_cpf, _nome, _dtNascimento, _email, ctps, ctpsEmissor, naturalidade, estadoCivil) {
         super(_cpf, _nome, _dtNascimento, _email);
-        this._ctps = _ctps;
-        this._ctpsEmissor = _ctpsEmissor;
-        this._naturalidade = _naturalidade;
-        this._estadoCivil = _estadoCivil;
         this._matricula = 0;
+        this._ctps = ctps;
+        this._ctpsEmissor = ctpsEmissor;
+        this._naturalidade = naturalidade;
+        this._estadoCivil = estadoCivil;
     }
     set matricula(matricula) {
         this._matricula = matricula;
@@ -42,4 +39,3 @@ class Funcionario extends pessoa_1.Pessoa {
         return this._estadoCivil;
     }
 }
-exports.Funcionario = Funcionario;

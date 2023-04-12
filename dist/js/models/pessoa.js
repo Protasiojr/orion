@@ -1,12 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Pessoa = void 0;
-class Pessoa {
-    constructor(_cpf, _nome, _dtNascimento, _email) {
-        this._cpf = _cpf;
-        this._nome = _nome;
-        this._dtNascimento = _dtNascimento;
-        this._email = _email;
+export class Pessoa {
+    constructor(cpf, nome, dtNascimento, email) {
+        this._cpf = cpf;
+        this._nome = nome;
+        this._dtNascimento = dtNascimento;
+        this._email = email;
     }
     set cpf(cpf) {
         this._cpf = cpf;
@@ -33,4 +30,3 @@ class Pessoa {
         return this._email;
     }
 }
-exports.Pessoa = Pessoa;

@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.DBLogin = void 0;
-class DBLogin {
+export class DBLogin {
     constructor() {
         this.inputLogin = document.querySelector('#login');
         this.inputSenha = document.querySelector('#senha');
@@ -11,4 +8,3 @@ class DBLogin {
         console.log(this.inputSenha);
     }
 }
-exports.DBLogin = DBLogin;
