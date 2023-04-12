@@ -8,7 +8,8 @@ export class DBLogin{
     }
 
     adiciona (){
-        console.log(this.inputLogin);
-        console.log(this.inputSenha);
+        const texto = this.inputLogin;
+        console.log(texto);
+        console.log(this.inputSenha?.ariaValueText);
     }
 }

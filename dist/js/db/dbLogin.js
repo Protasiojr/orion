@@ -4,7 +4,9 @@ export class DBLogin {
         this.inputSenha = document.querySelector('#senha');
     }
     adiciona() {
-        console.log(this.inputLogin);
-        console.log(this.inputSenha);
+        var _a;
+        const texto = this.inputLogin;
+        console.log(texto);
+        console.log((_a = this.inputSenha) === null || _a === void 0 ? void 0 : _a.ariaValueText);
     }
 }
