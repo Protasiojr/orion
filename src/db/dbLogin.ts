@@ -3,13 +3,12 @@ export class DBLogin{
     private inputSenha;
 
     constructor(){
-        this.inputLogin = document.querySelector('#login');
+        this.inputLogin = document.querySelector("#login");
         this.inputSenha = document.querySelector('#senha');
     }
 
     adiciona (){
-        const texto = this.inputLogin;
-        console.log(texto);
-        console.log(this.inputSenha?.ariaValueText);
+        console.log(this.inputLogin);
+        console.log(this.inputSenha);
     }
 }
