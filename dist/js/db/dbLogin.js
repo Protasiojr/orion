@@ -1,11 +1,14 @@
-export class DBLogin {
+import { Usuario } from '../models/usuario.js';
+export class DBLogin extends Usuario {
     constructor() {
-        this.inputLogin = document.querySelector("#login");
-        this.inputSenha = document.querySelector("#senha");
+        super();
+        this.inputLogin = document.querySelector('#login');
+        this.inputSenha = document.querySelector('#senha');
     }
     adiciona() {
-        var _a, _b;
-        console.log((_a = this.inputLogin) === null || _a === void 0 ? void 0 : _a.value);
-        console.log((_b = this.inputSenha) === null || _b === void 0 ? void 0 : _b.value);
+        this.login = this.inputLogin.value;
+        this.senha = this.inputSenha.value;
+        console.log(this.login);
+        console.log(this.senha);
     }
 }

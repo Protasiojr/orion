@@ -1,14 +1,20 @@
-export class DBLogin{
-    private inputLogin;
-    private inputSenha;
+import {Usuario} from '../models/usuario.js'
 
+export class DBLogin extends Usuario{
+    private inputLogin: HTMLInputElement;
+    private inputSenha: HTMLInputElement;
+    
     constructor(){
-        this.inputLogin = document.querySelector("#login") as HTMLInputElement | null;
-        this.inputSenha = document.querySelector("#senha") as HTMLInputElement | null;
-    }
+        super();
+        this.inputLogin = document.querySelector('#login') as HTMLInputElement;
+        this.inputSenha = document.querySelector('#senha') as HTMLInputElement;
+       }
 
-    adiciona (){
-        console.log(this.inputLogin?.value);
-        console.log(this.inputSenha?.value);
+    adiciona():void{
+        this.login = this.inputLogin.value;
+        this.senha = this.inputSenha.value;
+        console.log(this.login);
+        console.log(this.senha);
+                
     }
 }
