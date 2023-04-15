@@ -9,12 +9,11 @@ export class DBLogin extends Usuario{
         this.inputLogin = document.querySelector('#login') as HTMLInputElement;
         this.inputSenha = document.querySelector('#senha') as HTMLInputElement;
        }
-
+       
     adiciona():void{
         this.login = this.inputLogin.value;
         this.senha = this.inputSenha.value;
         console.log(this.login);
-        console.log(this.senha);
-                
+        console.log(this.senha);            
     }
 }

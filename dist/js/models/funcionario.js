@@ -1,4 +1,4 @@
-import { Pessoa } from "./pessoa";
+import { Pessoa } from "./pessoa.js";
 export class Funcionario extends Pessoa {
     constructor(_cpf, _nome, _dtNascimento, _email, ctps, ctpsEmissor, naturalidade, estadoCivil) {
         super(_cpf, _nome, _dtNascimento, _email);

@@ -1,4 +1,4 @@
-import { Pessoa } from "./pessoa";
+import { Pessoa } from "./pessoa.js";
 
 export class Funcionario extends Pessoa{
 

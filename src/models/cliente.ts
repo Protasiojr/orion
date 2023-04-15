@@ -1,9 +1,9 @@
-import { Pessoa } from "./pessoa";
+import { Pessoa } from "./pessoa.js";
 
 export class Cliente extends Pessoa{
 
     private _idCliente: number = 0;
-
+    
     constructor(cpf:number, 
                 nome: String, 
                 dtNascimento:Date, 
