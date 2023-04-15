@@ -3,12 +3,12 @@ export class DBLogin{
     private inputSenha;
 
     constructor(){
-        this.inputLogin = document.querySelector("#login");
-        this.inputSenha = document.querySelector('#senha');
+        this.inputLogin = document.querySelector("#login") as HTMLInputElement | null;
+        this.inputSenha = document.querySelector("#senha") as HTMLInputElement | null;
     }
 
     adiciona (){
-        console.log(this.inputLogin);
-        console.log(this.inputSenha);
+        console.log(this.inputLogin?.value);
+        console.log(this.inputSenha?.value);
     }
 }
