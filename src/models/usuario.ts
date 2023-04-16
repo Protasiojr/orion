@@ -1,10 +1,12 @@
 
 export class Usuario {
 
-    private _login:String = "";
-    private _senha:String = "";
+    private _login:String;
+    private _senha:String;
 
     constructor(){
+        this._login = "";
+        this._senha = "";
     }
 
     set login(login:String){

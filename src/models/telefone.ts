@@ -1,11 +1,12 @@
 export class Telefone{
 
-    private _idTelefone:number = 0;
+    private _idTelefone:number;
     private _ddd:number;
     private _numero:number;
     private _tipo:String;
 
     constructor( ddd:number,numero:number,tipo:String){
+        this._idTelefone=0;
         this._ddd=ddd;
         this._numero=numero;
         this._tipo=tipo;
