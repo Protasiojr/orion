@@ -1,14 +1,13 @@
-import { Endereco } from "./endereco";
 import { Pessoa } from "./pessoa.js";
 export class Funcionario extends Pessoa {
     constructor(_cpf, _nome, _dtNascimento, _email, ctps, ctpsEmissor, naturalidade, estadoCivil) {
         super(_cpf, _nome, _dtNascimento, _email);
         this._matricula = 0;
-        this._enderedo = new Endereco();
         this._ctps = ctps;
         this._ctpsEmissor = ctpsEmissor;
         this._naturalidade = naturalidade;
         this._estadoCivil = estadoCivil;
+        this._idEndereco = 0;
     }
     set matricula(matricula) {
         this._matricula = matricula;

@@ -14,6 +14,7 @@ export class DBLogin extends Usuario{
         this.login = this.inputLogin.value;
         this.senha = this.inputSenha.value;
         console.log(this.login);
-        console.log(this.senha);            
+        console.log(this.senha);
+        window.location.href = "../dist/index.html";            
     }
 }
